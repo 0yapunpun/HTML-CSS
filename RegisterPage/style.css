@@ -1,0 +1,285 @@
+:root {
+    --clr-background: #eceef1;
+    --clr-blue: #0077c5;
+    --clr-mint: #00a6a4;
+    --clr-quick: #2ca01c;
+    --clr-turbo: #d5261e;
+}
+
+*{
+    padding: 0;
+    
+}
+
+body{
+    max-width: 100%;
+    max-height: 100%;
+    background-color: var(--clr-background);
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Header*/
+.header{
+    float: right;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 14px;
+    
+}
+
+.header div{
+    margin: 10px;
+    margin-top: 0;
+}
+
+.header p{
+    margin: 0;
+    color: #505050;
+}
+
+.header a{
+    text-decoration: none;
+    color: #0077C5;
+}
+
+
+.header button{
+    min-width: 110px;
+    margin: 10px; 
+    margin-top: 0; 
+    margin-left: 0;  
+    background-color: var(--clr-blue) ;
+    border: round;
+    color: white;
+    border-radius: 3px;
+    border: solid 1px black;
+}
+
+.header i,span{
+    vertical-align: middle;
+}
+
+
+/*Contenedor principal*/
+main{
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+/* Logos */
+
+.logos{
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.main-logo {
+    padding: 1.25rem 0;
+    border-bottom-style: solid;
+    border-bottom-width: 0;
+    border-bottom-color: transparent;
+}
+
+.logo-container {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.logo-container a.logo {
+    display: block;
+    background-image: url(./img/ecosystem_logos_new@2x-9448e6be.png);
+    background-size: 562px 83px;
+    width: 118px;
+    height: 35px;
+    margin: 0 auto;
+}
+
+.circles{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    color: gray;
+}
+
+.circles div{
+    margin-right: 10px;
+}
+
+.circles span{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+
+}
+
+.cir_blue{
+    background-color: var(--clr-mint);   
+    
+}
+
+.cir_green{
+    background-color: var(--clr-quick);
+    
+}
+
+.cir_red{
+    background-color: var(--clr-turbo);
+   
+        
+}
+
+/*Cuadro Formulario*/
+
+.content{
+    background-color: white;
+    border: solid 1px lightgray;
+    border-bottom: none;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.content h2  {
+    text-align: center;
+    color: #393a3d;
+}
+
+.content> p  {
+    text-align: center;
+    color: #393a3d;
+    margin-bottom: 0;
+
+}
+
+.learn_more_style{
+    margin-top: 0;
+
+}
+
+.content a  {
+    text-decoration: none;
+    color: #0077C5 ;
+}
+
+form{
+    margin: 20px;
+    color: #393a3d;;
+}
+
+form p{
+    font-size: 14px;
+}
+
+.search_bar{
+    border: 0.5px solid lightgrey;
+    border-radius: 3px;
+    width: 99%;
+    height: 30px;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.search_bar_lock{
+    border: 0.5px solid lightgrey;
+    border-radius: 3px;
+    width: 99%;
+    height: 30px;
+    margin-top: 5px;
+    padding-left: 5px;
+    background-image: url(img/unlock.png);
+    background-position: 98%; 
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+.submit_but{
+    background-color: var(--clr-blue) ;
+    color: white;
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+    border: none;
+    box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+}
+
+.submit_but i, .submit_but p{
+    vertical-align: middle;
+}
+
+.content>p{
+    font-size: 13px;
+    color: gray;
+}
+
+.el_error_mayor{
+    margin: 0;
+    color: #000000cf !important;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+main>footer{
+    border: solid 1px lightgray;
+    border-top: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 10px;
+    text-align: center;
+}
+
+main>footer p{
+    margin: 0;
+    color: gray;
+}
+
+main>footer a{
+    color: #0077C5 ;
+}
+
+
+/*Footer*/
+.links{
+    display: flex;
+    width: 100%;
+    justify-content: center
+
+}
+
+.links a{
+    text-decoration: none;
+    margin-top: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+footer p{
+    text-align: center;
+    font-size: 12px;
+    margin: 0;
+    color: gray;
+}
+
+.Privacy_fixed{
+    position: fixed; 
+    top: 96%;
+    left: 85%;
+    width: 120px;
+    background-color: #6b6c72;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;    
+}
+
+.Privacy_fixed h5{ 
+    margin: 0;
+    font-size: 13px;
+    color: white;
+
+}

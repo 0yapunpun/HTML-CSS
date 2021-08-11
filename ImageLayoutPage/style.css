@@ -1,0 +1,33 @@
+body{
+	width: 75vw;
+	height: 100vh;
+	margin: 0 auto;
+	font-family: 'Noto Serif', serif;
+}
+
+header{
+	text-align: center;
+	border-bottom: solid 1px black;
+
+}
+
+section{
+	min-height: 150px;
+}
+
+.imagenes{
+	margin: auto;
+	padding-top: 1em;
+	text-align: center;
+}	
+
+.imagenes img{
+	transition: 1s;
+	
+	width: 300px;
+}
+
+.imagenes img:hover{
+	filter: grayscale(100%);
+	transform: scale(1.05);
+}

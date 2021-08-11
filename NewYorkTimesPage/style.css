@@ -1,0 +1,404 @@
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height:50px;
+    border-bottom:solid 1px lightgray ;    
+}
+
+header .head_left{
+    max-width: 25vw;
+    display: flex;
+    align-items: center;
+}
+
+header .head_left div{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+header .head_left div:nth-child(2){
+    padding-right: 30px;
+    
+}
+
+header .head_left section{
+    max-width: 120px;
+}
+
+header .head_left section a{
+    text-decoration: none;
+    color:  black;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: 'Libre Franklin', sans-serif;   
+}
+
+header .head_left section a:hover{
+    text-decoration: underline;   
+}
+
+header .head_center{
+    
+    max-height: 50px;
+    text-align: center;
+    margin-top: 10px;
+    /*para rellenar el espacio faltante*/
+    flex-grow: 1;
+}
+
+header .head_center svg{
+    max-width:70%;
+    height:80%;
+}
+
+header .head_right{
+    justify-content:flex-end;
+    max-width: 15vw;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+
+
+}
+
+header .head_right span{
+    padding-right: 10px;
+    padding-left: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #567b95;
+    color: white;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+}
+
+.title{
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.title h3{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: nyt-cheltenham,georgia,'times new roman',times,serif;;
+    font-size: 30px;
+    font-style: italic;
+    /*color: #333333;*/
+    padding-bottom: 10px;
+    border-bottom: solid 1px lightgray;
+}
+
+.title img{
+    width: 90%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.title div{
+    width: 700px;
+    margin-left: 45px;
+    text-align: left;
+    margin-top: 0px;
+}
+
+.title p{
+    color: #666;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.title span{
+    color: #9a948f;
+}
+
+
+
+/*main*/
+.main_content{
+    width: 600px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left:  calc((100% - 600px) / 2);
+    margin-right: 0;
+}
+
+.head_content h6{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.art_content{
+    font-size: 20px;
+
+}
+
+.art_content{
+    line-height: 1.5;
+}
+
+.suscribe_promotion{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+/*to add shorter lines usin :after y before*/
+.suscribe_promotion:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 15%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid lightgray; 
+}
+
+.suscribe_promotion:before {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 15%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid lightgray; 
+}
+
+.suscribe_promotion p{
+    margin-bottom: 0;
+    font-weight: 900;
+}
+
+.suscribe_promotion a{
+    text-decoration: none;
+    font-weight: 900;
+    color: #3268ad;
+}
+
+.diagrama{
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.diagrama_tilte{
+    margin-bottom: 5px;
+    font-weight: 900; 
+    font-size: 20px
+}   
+
+.diagrama_p{
+    color: #666;
+    padding-bottom: 15px;
+    margin-top: 0;
+}
+
+.diagrama_tags{
+    display: grid;
+    grid-template-columns: 225px 225px 225px 225px;
+    grid-template-rows: 300px 300px;
+    gap: 5px;   
+}
+
+
+.diagrama_tags div{
+    
+    /*background-color: #666;*/
+}
+
+.diagrama_tags img {
+    width: 100% ;
+    height: 50%;
+    
+}
+
+.diagrama_tags p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.diagram_footer{
+    font-size: 13px;
+}
+
+.diagram_footer:before {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 5%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid black; 
+}
+
+.youtube_link, .sunset{
+    width: 560px;
+    height: auto;
+}
+
+.youtube_link p{
+    margin-top: 5px;
+    margin-right: 65px;
+    color: #666;
+    font-size: 13px;
+}
+
+.youtube_link p span{
+    
+    color: #9a948f;
+    
+}
+
+
+.main_content_footer p{
+    color: gray;
+    font-size: 12px;
+}
+
+.main_content_footer a{
+    color: gray;
+}
+
+.main_content_footer a:hover{
+    text-decoration: none;
+}
+
+.main_content_footer button{
+    color: white;
+    border: none;
+    background-color: #567b95 ;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: 'Libre Franklin', sans-serif;
+    padding: 10px 80px;
+
+}
+
+
+footer{
+    width: 95%;
+    height: 500px;
+    margin-top: 40px;
+    border-top: solid 3px lightgray;
+    margin: 30px 30px;
+}
+
+.foot_logo{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.foot_logo svg{
+    width: 17%;
+    height: auto;
+    align-self: flex-start;
+    line-height: 50px;
+    padding-top: 5px;
+}
+
+.foot_logo a{
+    text-decoration: none;
+    color: #3268ad;
+    
+    font-size: 13px;
+    padding-right: 10px;
+
+}
+
+.foot_content{
+    width: 90%;
+    height: 70%;
+    margin-top: 20px;
+    
+    /*background-color: lightgray;*/
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    border-bottom: solid 1px lightgray;
+}
+
+.foot_content p, .foot_column_6 a{
+    font-weight: 600;   
+}
+
+.foot_column a, .foot_column_6 a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 300;  
+    line-height: 1.5;
+}
+
+.foot_column a:hover{
+    text-decoration: underline;
+}
+
+
+
+.foot_column_6{
+    border-left: solid 1px lightgray;
+    padding-left: 10px;  
+}
+
+
+
+.foot_column_6 span a{
+    padding-left: 15px;
+    font-size: 15px;
+    color: black;
+    font-weight: 700 !important;
+}
+
+.border_botton{
+    border-bottom: solid 1px lightgray;
+}
+
+.white_space{
+    margin-top: 15px;
+}
+
+
+.foot_column, .foot_column_6{
+    width: 120px;
+    display: flex;
+    flex-grow: 1; 
+    /*flex-grow para ocupar espacio restante*/
+    flex-direction: column;
+    font-family: Helvetica, sans-serif;
+}
+
+.foot_column_6 a:hover{
+    text-decoration: underline;
+}
+
+.foot_footer{
+    padding-top: 10px;
+    margin-left: 45px;
+
+}
+
+.foot_footer a{
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+    color: gray;
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+.foot_footer a:hover{
+    text-decoration: underline;
+}
+
