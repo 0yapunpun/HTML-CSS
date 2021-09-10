@@ -1,4 +1,4 @@
-# practiceHTML-CSS
+# HTML-CSS
 
 ## Description
 This repository it's a compendium of pages maked with HTML and CSS.
